@@ -1,3 +1,7 @@
+import kotlin.math.cos
+import kotlin.math.pow
+import kotlin.math.sin
+
 fun main(args: Array<String>) {
     println("Задание 1")
     println()
@@ -28,11 +32,11 @@ fun main(args: Array<String>) {
     println()
     ProgramTwo_2()
     println()
-    ProgramTwo_3()
+    //ProgramTwo_3()
     println()
     ProgramTwo_4()
     println()
-    ProgramTwo_5()
+    //ProgramTwo_5()
     println()
     ProgramTwo_6()
     println()
@@ -252,7 +256,7 @@ fun ProgramOne_10() {
 
 fun ProgramTwo_1() {
     println("Разработать метод min(a,b) для нахождения минимального из двух чисел." +
-            "Вычислить с его помощью значение выражения")
+            "Вычислить с его помощью значение выражения z = min(3x, 2у) + min(x - у, х + у).")
     print("Введите x: ")
     val x = readLine()?.toInt()
     print("Введите y: ")
@@ -267,7 +271,7 @@ fun ProgramTwo_1() {
 
 fun ProgramTwo_2() {
     println("Разработать метод min(a,b) для нахождения минимального из двух чисел. " +
-            "Вычислить с его помощью минимальное значение из четырех чисел х,у, z, v.")
+            "Вычислить с его помощью минимальное значение из четырех чисел х, у, z, v.")
     print("Введите x: ")
     val x = readLine()?.toInt()
     print("Введите y: ")
@@ -291,7 +295,7 @@ fun ProgramTwo_2() {
 
 fun ProgramTwo_3() {
     println("Разработать метод max(a,b) для нахождения максимального из двух чисел." +
-            "Вычислить с его помощью значение выражения")
+            "Вычислить с его помощью значение выражения ???.")
     print("Введите x: ")
     val x = readLine()?.toInt()
     print("Введите y: ")
@@ -300,41 +304,78 @@ fun ProgramTwo_3() {
         return if (a > b) a
         else b
     }
-    println("z = $")
+    println("")
 }
 
 fun ProgramTwo_4() {
+    println("Разработать метод ƒ(х), вычисляющий значение по следующей формуле:" +
+            "f(x) = х^3 - sinх. Определить, в какой из двух точек, a или b, f(x) принимает наибольшее значение.")
+    print("Введите a: ")
+    val a = readLine()?.toDouble()
+    print("Введите b: ")
+    val b = readLine()?.toDouble()
+    fun Func(x1:Double, x2:Double):Double {
+        return if (x1.pow(2) - sin(x1) > x2.pow(2) - sin(x2)) x1
+        else x2
+    }
+    println("f(x) принимает наибольшее значение в точке ${Func(a!!, b!!)}")
 }
 
 fun ProgramTwo_5() {
+    println("Разработать метод ƒ(х), вычисляющий значение по следующей формуле:" +
+            "???. Определить, в какой из двух точек," +
+            "а или b, f(x) принимает наименьшее значение")
+    print("Введите x: ")
+    val x = readLine()?.toDouble()
+    fun Func(x:Double):Double {
+        return cos(x)
+    }
 }
 
 fun ProgramTwo_6() {
+    println("Разработать метод f(x), возвращающий младшую цифру натурального числа х." +
+            "Вычислить с его помощью значение выражения z = ƒ(a) + ƒ(b).")
+    print("Введите a: ")
+    val a = readLine()?.toDouble()
+    print("Введите b: ")
+    val b = readLine()?.toDouble()
+    fun Func(x:Int):Int {
+        return 0
+    }
 }
 
 fun ProgramTwo_7() {
+    println("")
 }
 
 fun ProgramTwo_8() {
+    println("")
 }
 
 fun ProgramTwo_9() {
+    println("")
 }
 
 fun ProgramTwo_10() {
+    println("")
 }
 
 fun ProgramTwo_11() {
+    println("")
 }
 
 fun ProgramTwo_12() {
+    println("")
 }
 
 fun ProgramTwo_13() {
+    println("")
 }
 
 fun ProgramTwo_14() {
+    println("")
 }
 
 fun ProgramTwo_15() {
+    println("")
 }
