@@ -15,7 +15,15 @@ fun ProgramTwo_1() {
     val stroka = readLine()
     print("Введите подстроку: ")
     val podstroka = readLine()
-
+    var counter = stroka?.substringBefore(' ')
+    if (stroka != null) {
+        for (ssdg in stroka) {
+            if (counter == podstroka) {
+                print("$counter ")
+            }
+            counter = stroka.substringAfter(' ').substringBefore(' ')
+        }
+    }
 }
 
 fun ProgramTwo_2() {
