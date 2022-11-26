@@ -1,7 +1,27 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    println("Задание 2: ")
+    println()
+    ProgramTwo_1()
+    println()
+    ProgramTwo_2()
+}
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun ProgramTwo_1() {
+    println("1. Дана строка, в которой содержится осмысленное текстовое сообщение." +
+            "Слова сообщения разделяются пробелами и знаками препинания." +
+            "Вывести только те слова сообщения, в которых содержится заданная подстрока.")
+    println()
+    print("Введите строку: ")
+    val stroka = readLine()
+    print("Введите подстроку: ")
+    val podstroka = readLine()
+
+}
+
+fun ProgramTwo_2() {
+    println("2. Дана строка, в которой содержится осмысленное текстовое сообщение." +
+            "Слова сообщения разделяются пробелами и знаками препинания." +
+            "Вывести только те слова сообщения, которые содержат не более чем n букв.")
+    println()
+
 }
