@@ -38,19 +38,19 @@ fun ProgramOne_2() {
     val x = readLine()!![0]
     print("Введите второй символ: ")
     val y = readLine()!![0]
-    var counterx = 0
-    var countery = 0
+    var counterX = 0
+    var counterY = 0
     var n = 0
     s!!.forEach { _ ->
         val char = s[n]
-        if (char == x) counterx++
-        if (char == y) countery++
+        if (char == x) counterX++
+        if (char == y) counterY++
         n++
     }
-    if (counterx > countery) {
-        println("Символ '$x' употребляется чаще ($counterx > $countery)")
+    if (counterX > counterY) {
+        println("Символ '$x' употребляется чаще ($counterX > $counterY)")
     }
     else {
-        println("Символ '$y' употребляется чаще ($countery > $counterx)")
+        println("Символ '$y' употребляется чаще ($counterY > $counterX)")
     }
 }
